@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-08 08:37:48 "/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtQzNWSlU0SUg7MjAyNC0wMy0wODsiMDc6NTA6MDggIjsyNTQ2"/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtQzNWSlU0SUg7MjAyNC0wMy0wODsiMDg6Mzc6NDggIjszOzI2NjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="desigualdade" type="Boolean" array="False" size=""/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="desigualdade" expression="a &lt;&gt; b"/>
+            <output expression="desigualdade" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
