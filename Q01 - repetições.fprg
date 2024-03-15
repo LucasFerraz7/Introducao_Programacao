@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-15 08:05:21 "/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtQzNWSlU0SUg7MjAyNC0wMy0xNTsiMDc6Mjk6MTMgIjsyNTQ2"/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtQzNWSlU0SUg7MjAyNC0wMy0xNTsiMDg6MDU6MjEgIjszOzI2NTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text=""/>
+            <declare name="i, j" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="i" newline="True"/>
+            </for>
+            <assign variable="j" expression="1"/>
+            <while expression="j &lt;= 10">
+                <output expression="j" newline="True"/>
+                <assign variable="j" expression="j + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
