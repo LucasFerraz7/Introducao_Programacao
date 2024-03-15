@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-15 08:39:18 "/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtQzNWSlU0SUg7MjAyNC0wMy0xNTsiMDg6Mjg6MjIgIjsyNTQ2"/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtQzNWSlU0SUg7MjAyNC0wMy0xNTsiMDg6Mzk6MTggIjsxOzI2NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe o numero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <for variable="i" start="1" end="numero" direction="inc" step="1">
+                <output expression="i &amp; &quot; &quot;" newline="False"/>
+            </for>
+            <assign variable="j" expression="1"/>
+            <while expression="j &lt;= numero">
+                <output expression="j &amp; &quot; &quot;" newline="False"/>
+                <assign variable="j" expression="j + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
