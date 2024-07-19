@@ -1,28 +1,17 @@
-/*
-------------------------------------------------
-5. Crie um algoritmo/fluxograma/programa que 
-solicite ao usuï¿½rio 2 valores, em seguida, 
-troque o valor dessas variï¿½veis e imprima os 
-novos valores.
- */
 #include <iostream>
 #include <clocale>
+
 using namespace std;
 int main () {
 	setlocale(LC_ALL,"Portuguese");
-	float valor1, valor2, auxiliar;
-	cout<<"Informe a primeiro valor:";
-	cin>>valor1;
-	cout<<"Informe o segundo valor:";
-	cin>>valor2;
-	cout<<"Antes da troca:"<<endl;
-	cout<<valor1<<"  "<<valor2<<endl;
-	
-	auxiliar = valor1;
-	valor1 = valor2;
-	valor2 = auxiliar;
-	
-	cout<<"Depois da troca:"<<endl;
-	cout<<valor1<<"  "<<valor2<<endl;
+	int ano, resto;
+	cout<<"Informe o ano:";
+	cin>>ano;
+	resto = ano % 4;
+	if (resto == 0) {
+		cout<<ano<<"É um ano bissexto!";
+	} else {
+		cout<<ano<<"Não é um ano bissexto!";
+	}
 	return 0;
 }

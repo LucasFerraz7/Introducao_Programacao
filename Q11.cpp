@@ -1,25 +1,24 @@
-/*
-------------------------------------------------
-11. Crie um algoritmo/fluxograma/programa que 
-solicite ao usuï¿½rio dois nï¿½meros inteiros e, em 
-seguida, imprima o resultado da potenciaï¿½ï¿½o do 
-primeiro pelo segundo. Usar a biblioteca cmath.
- */
 #include <iostream>
-#include <cmath>
 #include <clocale>
+
 using namespace std;
+
 int main () {
 	setlocale(LC_ALL,"Portuguese");
-	int num1, num2;
-	double resultado;
-	cout<<"Informe a base:";
+	int num1, num2, num3;
+	cout<<"Informe o primeiro numero:";
 	cin>>num1;
-	cout<<"Informe o expoente:";
-	cin>>num2;	
-	resultado = pow(num1, num2);
-	cout<<num1<<" elevado a "<<num2<<" Ã© ";
-	cout<<resultado<<endl;
+	cout<<"Informe o segundo numero:";
+	cin>>num2;
+	cout<<"Informe o terceiro numero:";
+	cin>>num3;
+
+	if (num1 <= num2 && num2 <= num3)
+		cout<<"Está em ordem crescente"; 
+	else if (num1 >= num2 && num2 >= num3)
+		cout<<"Está em ordem decrescente";
+	else
+		cout<<"Está fora de ordem";
+
 	return 0;
 }
-

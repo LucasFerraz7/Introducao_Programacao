@@ -1,24 +1,18 @@
-/*
-------------------------------------------------
-15. Crie um algoritmo/fluxograma/programa que 
-solicite ao usuário o raio e calcule e imprima 
-o perímetro e a área do círculo correspondente. 
-Usar a biblioteca cmath.
- */
 #include <iostream>
-#include <cmath>
 #include <clocale>
 
 using namespace std;
 int main () {
 	setlocale(LC_ALL,"Portuguese");
-	double raio;
-	int perimetro, area;
-	cout<<"Informe o raio:";
-	cin>>raio;
-    perimetro = 2 * M_PI * raio;
-    area = M_PI * pow(raio, 2);
-    cout<<"Perímetro:"<<perimetro<<endl;
-    cout<<"Área:"<<area<<endl;
+	float preco, venda;
+	cout<<"Informe o preco:";
+	cin>>preco;
+
+    if (preco < 20.0)
+        venda = preco * 1.4;
+    else 
+        venda = preco * 1.3;
+    
+    cout<<"Preco de Venda:"<<venda;
 	return 0;
 }
