@@ -1,24 +1,22 @@
+//11.Crie um algoritmo/fluxograma/programa que 
+//encontre e escreva a mï¿½dia dos elementos de um
+//array.
+
 #include <iostream>
 #include <clocale>
+#include <cstdlib>
 
 using namespace std;
 
-int main () {
+int main() {
 	setlocale(LC_ALL,"Portuguese");
-	int num1, num2, num3;
-	cout<<"Informe o primeiro numero:";
-	cin>>num1;
-	cout<<"Informe o segundo numero:";
-	cin>>num2;
-	cout<<"Informe o terceiro numero:";
-	cin>>num3;
+	int dado[] = {-3, 0, 8, -1, 13, 7, 34, -6};
+	const int tam = sizeof dado/sizeof dado[0];
+	
+	int soma = 0;
+	for (int i = 0; i < tam; i++)
+		soma += dado[i];
 
-	if (num1 <= num2 && num2 <= num3)
-		cout<<"Está em ordem crescente"; 
-	else if (num1 >= num2 && num2 >= num3)
-		cout<<"Está em ordem decrescente";
-	else
-		cout<<"Está fora de ordem";
-
-	return 0;
+	cout<<"Média:"<<(float)soma/tam<<endl;
+	return EXIT_SUCCESS;	
 }

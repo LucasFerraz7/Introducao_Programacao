@@ -1,52 +1,29 @@
+//2.Crie um algoritmo/fluxograma/programa que 
+//preencha um array com os quadrados dos números 
+//de 1 a N, onde N é um valor informado pelo 
+//usuário. 
+
 #include <iostream>
+#include <cmath>
 #include <clocale>
+#include <cstdlib>
 
 using namespace std;
+
 int main () {
 	setlocale(LC_ALL,"Portuguese");
-	int mes;
-	cout<<"Informe um número referente a um ";
-	cout<<"mês:";
-	cin>>mes;
-	switch(mes) {
-		case 1:
-			cout<<"Janeiro"<<endl;
-			break;
-		case 2:
-			cout<<"Fevereiro"<<endl;
-			break;
-		case 3:
-			cout<<"Março"<<endl;
-			break;
-		case 4:
-			cout<<"Abril"<<endl;
-			break;
-		case 5:
-			cout<<"Maio"<<endl;
-			break;
-		case 6:
-			cout<<"Junho"<<endl;
-			break;
-		case 7:
-			cout<<"Julho"<<endl;
-			break;
-		case 8:
-			cout<<"Agosto"<<endl;
-			break;
-		case 9:
-			cout<<"Setembro"<<endl;
-			break;
-		case 10:
-			cout<<"Outubro"<<endl;
-			break;
-		case 11:
-			cout<<"Novembro"<<endl;
-			break;
-		case 12:
-			cout<<"Dezembro"<<endl;
-			break;
-		default:
-			cout<<"Mês inválido!"<<endl;
+	
+	int n;
+	cout<<"Informe um valor:";
+	cin>>n;
+	int dado[n];
+		    
+	for (int i = 0; i < n; i++) {
+		dado[i] = pow(i+1, 2);
 	}
-	return 0;
+	
+	for (int i = 0; i < n; i++) {
+		cout<<dado[i] <<" ";
+	}
+	return EXIT_SUCCESS;
 }

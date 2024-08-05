@@ -1,27 +1,28 @@
-/*
-------------------------------------------------
-4. Crie um algoritmo/fluxograma/programa que l� 
-o nome de um aluno, as notas de suas tr�s provas
-e calcule e exiba na tela a m�dia harm�nica das 
-provas.
- */
+//4. Crie um algoritmo/fluxograma/programa que 
+//encontre o maior e o menor n�mero em um array e 
+//imprima-os na tela.
+
 #include <iostream>
 #include <clocale>
+#include <cstdlib>
+
 using namespace std;
-int main () {
+
+int main() {
 	setlocale(LC_ALL,"Portuguese");
-	string nome;
-	float nota1, nota2, nota3, media;
-	cout<<"Informe o nome do aluno:";
-	cin>>nome;
-	cout<<"Informe a nota 1:";
-	cin>>nota1;
-	cout<<"Informe a nota 2:";
-	cin>>nota2;
-	cout<<"Informe a nota 3:";
-	cin>>nota3;	
-	media = 3 / (1/nota1 + 1/nota2 + 1/nota3);
-	cout<<"A media harmônica de "<<nome<<" é:";
-	cout<<media<<endl;
-	return 0;
+	int dado[] = {-4, 0, 5, -1, 16, 2, 23, -3};
+	const int tam = sizeof dado/sizeof dado[0];
+	
+	int menor = 1000000;
+	int maior = -1000000;
+	for (int i = 0; i < tam; i++) {
+		if (dado[i] < menor)
+			menor = dado[i];
+		
+		if (dado[i] > maior)
+			maior = dado[i];		
+	}
+	cout<<"Menor:"<<menor<<endl;
+	cout<<"Maior:"<<maior<<endl;	
+	return EXIT_SUCCESS;
 }
